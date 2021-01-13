@@ -3,7 +3,7 @@
 ![](https://visitor-badge.glitch.me/badge?page_id=wiktorkisielewski.me)
 
 <h3>Who am I:</h3>
-<p>💻 IT (Data Science) student </br>🚲 Bike enthusiast</br>🍵 Coffee lover</p>
+<p>💻 IT (Data Science) student </br>🚲 Bike enthusiast</br>☕️ Coffee lover</p>
 
 <h3>What I use:</h3>
 <p align="left">
