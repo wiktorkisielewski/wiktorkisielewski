@@ -23,7 +23,7 @@ jobs:
           target_branch: snake
           build_dir: dist
           commit_message: "contribution snake refresh"
-          commiter: "wiktorkisielewski <wiktor.kisielewski@proton.me>"
+          committer: "wiktorkisielewski <wiktor.kisielewski@proton.me>"
           author: "wiktorkisielewski <wiktor.kisielewski@proton.me>"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
