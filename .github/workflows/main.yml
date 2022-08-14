@@ -10,18 +10,20 @@ jobs:
     timeout-minutes: 10
     
     steps:
-      # generates a snake game from a github user (<github_user_name>) contributions graph, output a svg animation at <svg_out_path>
-      - name: generate github-contribution-grid-snake.svg
+      - name: generate snake gifs
         uses: Platane/snk/svg-only@v2
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
-      - name: save github-contribution-grid-snake.svg
+      - name: save the snakes
         uses: crazy-max/ghaction-github-pages@v2.6.0
         with:
           target_branch: snake
           build_dir: dist
+          commit_message: "contribution snake refresh"
+          commiter: "wiktorkisielewski <wiktor.kisielewski@proton.me>"
+          author: "wiktorkisielewski <wiktor.kisielewski@proton.me>"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
